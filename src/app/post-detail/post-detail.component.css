@@ -27,10 +27,21 @@
     margin-bottom: 16px;
 }
 
+
+.post-likes-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .post-likes {
     font-size: 0.9em;
-    margin-right: 8px;
+    margin-right: 10px;
     color: #7b1fa2;
+}
+
+.like-button {
+    margin-left: 10px;
 }
 
 .like-button {
@@ -48,8 +59,14 @@
 }
 
 .back-button {
-    color: violet;
     text-decoration: none;
+    padding: 6px 12px;
+    background-color: #ab47bc;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: inline-block;
+    text-align: center;
 }
 
 .back-button:hover {
