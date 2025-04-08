@@ -9,6 +9,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     PostListComponent,
     PostCardComponent,
     PostDetailComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

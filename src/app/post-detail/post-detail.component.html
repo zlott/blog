@@ -1,1 +1,11 @@
-<p>post-detail works!</p>
+<div class="post-card">
+    <h2 class="post-title">{{ post.title | titlecase }}</h2>
+    <p class="post-author">By {{ post.author }}</p>
+    <p class="post-date">{{ post.publicationDate | date:'dd/MM/yyyy' }}</p>
+    <div class="post-content">
+        {{ post.content }}
+    </div>
+    <p class="post-likes" [ngStyle]="{color: 'rgb(0,'+post.likes+',0)'}">{{ post.likes }} likes</p>
+    <button (click)="likePost()" class="like-button">Like</button>
+    <a [routerLink]="['/posts']" class="back-button">Back</a>
+</div>

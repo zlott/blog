@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Post } from '../models/post';
 
 @Component({
   selector: 'app-post-card',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './post-card.component.css'
 })
 export class PostCardComponent {
+
+  @Input() post!: Post; 
+ 
+  likePost() {
+    this.post.likes++;
+  }
 
 }
